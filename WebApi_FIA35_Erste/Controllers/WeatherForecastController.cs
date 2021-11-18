@@ -72,5 +72,24 @@ namespace WebApi_FIA35_Erste.Controllers
             return 42;
         }
 
+        //[HttpGet]
+        //[Route("/api/[Controller]/SelectAll")]
+        //public List<ToDo> SelectAllToDo()
+        //{
+        //    // Datenbank anzapfen
+
+        //    return ToDoListe;
+        //}
+
+        [HttpPut]
+        [Route("/api/[Controller]/Summe")]
+        public int Summe1() { return 666; }
+
+
+        [HttpPatch]
+        [Route("/api/[Controller]/Summe")]
+        public int Summe2() { return 123; }
+        
+
     }
 }
